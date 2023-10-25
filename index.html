@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Mulish:wght@400;700&display=swap" 
+    rel="stylesheet">
+    <link rel="shortcut icon" href="img/pizza logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Ristorante Lorenzo</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor"> 
+                <div class="logo">
+                    <h2>Ristorante <span class="verde">Lo</span><span>ren</span><span class="rojo">zo</span></h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="index.html">Inicio</a>
+                    <a href="#nos">Nosotros</a>
+                    <a href="productos.html">Menú</a>
+                    <a href="chef.html">Chef</a>
+                    <a href="formulario.html">Contacto</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>Benvenuti!!</h2>
+                    <!--<a href="productos.html" class="btn bordes">Il nostro menu</a> -->
+                </div>
+                <video autoplay loop muted>
+                    <source src="img/bg_video.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+    
+    <section class="contenedor-nosotros contenedor">
+        <div class="texto-nosotros">
+            <p class="bienvenidos" id="nos">Bienvenidos!</p>
+            <h1>Ristorante Lorenzo</h1>
+            <p>¿Te imaginas un lugar donde puedas disfrutar de la auténtica comida italiana en un ambiente elegante y acogedor? Un lugar donde puedas compartir una cena romántica con tu pareja o una comida familiar inolvidable.
+                En nuestro restaurante, encontrarás una amplia variedad de platos italianos tradicionales, elaborados con ingredientes frescos y de la más alta calidad. Nuestra carta incluye pizzas, pastas, risottos, carnes, pescados y postres, todos ellos preparados con el cariño y la dedicación de un equipo de chefs profesionales.
+                Nuestro restaurante cuenta con un ambiente elegante y acogedor, perfecto para cualquier ocasión. Las mesas están bien separadas para que puedas disfrutar de una conversación íntima con tus acompañantes. La decoración es cálida y sofisticada, con detalles que te transportarán a Italia. 
+                ¡Ven a disfrutar de una experiencia gastronómica inolvidable!
+            </p>
+            <h3>¡Buon appetito!</h3>
+            <a href="formulario.html" class="btn btn-rojo">Contactános</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img src="img/nosotros1.webp" alt="nosotros1">
+            </div>
+            <div class="imagenes2">
+                <img src="img/nosotros2.webp" alt="nosotros2">
+                <img src="img/nosotros3.webp" alt="nosotros3">
+            </div>
+        </div>
+    </section>
+    
+    <div class="separador">
+        <div class="contenido-separador contenedor">
+            <h2>Comida Italiana para empezar el día</h2>
+            <p>Empieza tu dia comiendo deliciosa comida o un cafe italiano</p>
+            <a href="productos.html" class="btn btn-verde">Oredenar ahora</a>
+
+        </div>
+    </div>
+    
+    <div class="pie-pagina">
+        <div class="contenedor-pie contenedor ">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>23.Roma Italia 75012</p>
+            </div>
+            <div class="info">
+                <h3>Dias Especiales</h3>
+                <p>Martes y Miercoles: 11am -11pm</p>
+                <p>+5412349876</p>
+            </div>
+            <div class="info">
+                <h3>Horario</h3>
+                <p>Martes - Domingo: 8am-11pm</p>
+                <div class="redes-sociales redes-pie">
+                    <box-icon type='logo' name='meta' color='#ffffff'></box-icon>
+                    <box-icon type='logo' name='twitter' color='#ffffff'></box-icon>
+                    <box-icon type='logo' name='instagram'color='#ffffff' ></box-icon>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Noticias</h3>
+                <p>Suscribite para recibir nuestras promociones</p>
+                <input type="email" placeholder="tucorreo@ejemplo.com">
+                <input type="submit" class="btn btn-verde" value="Suscribirse">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy;2023 Restorante Lorenzo, desarrollado Vikigs Desing</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
