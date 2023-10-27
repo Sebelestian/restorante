@@ -155,8 +155,12 @@ img{
     color: var(--blanco);
 }
 
+.logo a{
+    text-decoration: none;
+}
 .logo h2{
     font-size: 3rem;
+    
 }
 
 .navegacion a{
@@ -456,12 +460,18 @@ video{
 }
 
 /*seccion del chef*/ 
+
+.contenido-chef{
+    margin: 0rem 0.5rem ;
+}
+
 .chef h2{
     background-color: var(--rojo);
     display: inline-block;
     padding: 1rem 3rem;
     color:  var(--blanco);
     font-size: 4rem;
+    margin-top: 5rem;
 }
 
 @media(min-width:768px){
@@ -509,8 +519,6 @@ video{
     padding: 3rem;
 }
 
-
-
 .informacion-contacto h3, .informacion-contacto p{
     color: var(--blanco);
 }
@@ -524,7 +532,6 @@ video{
     font-size: 2.2rem;
 }
 
-/* 3:39:00hs*/
 .informacion-contacto box-icon{
     margin-right: 0.5rem;
 }
@@ -619,3 +626,20 @@ video{
     padding: 2rem;
     font-size: 2rem;
 }
+
+/*validacion*/
+.warnings{
+    width: auto;
+    text-align:center;
+    color: #881014;
+    text-shadow: 0px 3px 3px ;
+}
+
+/*Iframe*/
+.section{
+    margin-top: 5rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+

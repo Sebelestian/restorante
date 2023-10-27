@@ -91,6 +91,3 @@ const cerrarMenu = (boton, overlay) =>{
         contenedor.removeChild(contenedor.firstChild);
     }
  }
-
- /*Validación Formulario*/
- 

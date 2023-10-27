@@ -19,7 +19,9 @@
         <div class="contenedor-navegacion">
             <div class="contenido-navegacion contenedor"> 
                 <div class="logo">
+                    <a href="index.html">
                     <h2>Ristorante <span class="verde">Lo</span><span>ren</span><span class="rojo">zo</span></h2>
+                    </a>
                 </div>
                 <nav class="navegacion ocultar">
                     <a href="index.html">Inicio</a>
@@ -36,8 +38,8 @@
         <div class="contenido-header2">
             <div class="contenedor-encabezado">
                 <div class="texto-encabezado">
-                    <h2>Ordena ahora!</h2>
-                    <a href="" class="btn bordes">Il nostro menu</a>
+                    <!--<h2>Ordena ahora!</h2>
+                    <a href="" class="btn bordes">Il nostro menu</a> -->
                 </div>
                 <video autoplay loop muted>
                     <source src="img/production_id_3752509 (1080p).mp4">
@@ -58,33 +60,38 @@
                 <box-icon type='logo' name='instagram'color='#ffffff' ></box-icon>
             </div>
         </div>
-        <form class="formulario">
+        <form class="formulario" action="https://formspree.io/f/meqbnnvw" method="POST" id="form">
             <div class="input-formulario">
                 <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Juan" id="nombre" required minlength="3">
+                <input type="text" placeholder="Juan" id="nombre" minlength="3" required>
             </div>
             <div class="input-formulario">
                 <label for="apellido">Apellido</label>
-                <input type="text" placeholder="Bianchi" id="apellido" required minlength="3">
+                <input type="text" placeholder="Bianchi" id="apellido" minlength="3" required>
             </div>
             <div class="input-formulario">
                 <label for="email">E-Mail</label>
-                <input type="text" placeholder="ejemplo@ejemplo.com" id="email">
+                <input type="text" placeholder="ejemplo@ejemplo.com" id="email" required>
             </div>
             <div class="input-formulario">
                 <label for="telefono">Teléfono</label>
-                <input type="tel" placeholder="+90 654 846 4565" id="telefono">
+                <input type="tel" placeholder="+90 654 846 4565" id="telefono" minlength="6" required>
             </div>
             <div class="input-formulario">
                 <label for="mensaje">Mensaje</label>
-                <textarea></textarea>
+                <textarea id="mensaje" required></textarea>
             </div>
             <div class="btn-formulario">
                 <input type="submit" class="btn btn-verde" value="enviar">
-                <p class="wanings" id="wanings"></p>
+                <p class="warnings" id="warnings"></p>
             </div>
         </form>
     </div>
+
+    <section class="section">
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.261067269454!2d12.4944906436983!3d41.89145343291727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColiseo%20de%20Roma!5e0!3m2!1ses-419!2sar!4v1698445174637!5m2!1ses-419!2sar" width="767" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
     <div class="pie-pagina">
         <div class="contenedor-pie contenedor ">
             <div class="info">
@@ -116,6 +123,6 @@
     <footer class="footer">
         <p>Todos los derechos reservados &copy;2023 Restorante Lorenzo, desarrollado Vikigs Desing</p>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/validacion.js"></script>
 </body>
 </html>
