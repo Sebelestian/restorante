@@ -72,7 +72,7 @@ const cerrarMenu = (boton, overlay) =>{
         warnings += 'El email no es válido.<br>';
         entrar = true;
     }
-    if(isNaN(telefono.value)){
+    if(isNaN(telefono.value) || telefono.value === ""){
         warnings += 'El teléfono no es válido.<br>';
         entrar= true;
     }
@@ -91,5 +91,25 @@ const cerrarMenu = (boton, overlay) =>{
 
 
  /* API FORMSPREE*/
+/*
+ const $form = document.getElementById("form");
 
- 
+ $form.addEventListener('submit', handleSubmit);
+
+ async function handleSubmit(event){
+    event.preventDefault()
+    const formu = new FormData(this);
+    const response = await fetch(this.action, 
+        {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    if (response.ok){
+        this.reset()
+        alert('Gracias por contactarnos')
+    }
+ }
+*/
